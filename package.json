@@ -33,7 +33,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "react-hooks",
+  "name": "@5alid/react-hooks",
   "author": "khaled",
   "module": "dist/react-hooks.esm.js",
   "size-limit": [
