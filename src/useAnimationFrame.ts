@@ -23,7 +23,7 @@ function createFrames(
 }
 
 export function useAnimationFrame(callback: () => void) {
-  const callbackRef = useRef<null | (() => void)>(null);
+  const callbackRef = useRef(callback);
   callbackRef.current = callback;
   useEffect(() => {
     const id = requestAnimationFrame(callbackRef.current || (() => undefined));
@@ -32,13 +32,10 @@ export function useAnimationFrame(callback: () => void) {
 }
 
 export function useAnimationFrameLoop(callback: () => void, fps = 60) {
-  const callbackRef = useRef<null | (() => void)>(null);
+  const callbackRef = useRef(callback);
   callbackRef.current = callback;
   useEffect(() => {
-    const [loop, cancel] = createFrames(
-      callbackRef.current || (() => undefined),
-      fps
-    );
+    const [loop, cancel] = createFrames(callbackRef.current, fps);
     requestAnimationFrame(loop);
     return cancel;
   }, [fps]);

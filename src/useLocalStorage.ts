@@ -1,5 +1,3 @@
-// credit -> https://usehooks.com/useLocalStorage/
-
 import { useState, useEffect, useRef } from 'react';
 
 export function useLocalStorage<T>(
