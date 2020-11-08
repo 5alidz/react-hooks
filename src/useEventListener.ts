@@ -1,4 +1,3 @@
-// credit -> https://github.com/hswolff/youtube/blob/master/videos/react-demos/src/demo/use-event-listener.tsx
 import { useEffect, useRef } from 'react';
 
 type DocumentCallback<T extends keyof DocumentEventMap> = (

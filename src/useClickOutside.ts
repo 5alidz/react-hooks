@@ -1,4 +1,3 @@
-// credit -> custom hooks in React Talk by Tanner Linsley
 import { useRef, MutableRefObject } from 'react';
 import { useDocumentEvent } from './useEventListener';
 

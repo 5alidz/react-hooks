@@ -1,4 +1,3 @@
-// credit -> custom hooks in React Talk by Tanner Linsley
 import { useState, useEffect } from 'react';
 const matchDark = '(prefers-color-scheme: dark)';
 
