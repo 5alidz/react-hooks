@@ -46,6 +46,9 @@
       "limit": "10 KB"
     }
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "devDependencies": {
     "@size-limit/preset-small-lib": "^4.7.0",
     "@types/react": "^16.9.56",
